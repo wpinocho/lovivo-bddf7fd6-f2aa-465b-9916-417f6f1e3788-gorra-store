@@ -71,7 +71,7 @@ export const ProductCardUI = ({ product }: ProductCardUIProps) => {
                     {logic.product.description.replace(/<[^>]*>/g, '')}
                   </p>
                 )}
-            </Link>
+              </div>
 
                 {logic.hasVariants && logic.options && (
                   <div className="mb-4 space-y-2">
@@ -146,7 +146,7 @@ export const ProductCardUI = ({ product }: ProductCardUIProps) => {
                     {logic.inStock ? 'Agregar' : 'Agotado'}
                   </Button>
                 </div>
-              </div>
+            </Link>
           </CardContent>
         </Card>
       )}
